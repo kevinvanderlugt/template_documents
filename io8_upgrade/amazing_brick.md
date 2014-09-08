@@ -2,8 +2,9 @@
 The purpose of this document is to outline the steps required to upgrade your app based on the Amazing Brick Template.
 This upgrade to your code base expects some knowledge of xCode and Objective-C.  
 
-If you don't want to update your code directly, we can offer (our services)[http://alpinepipeline.com/pages/services] or you can use another objective-c programmer to perform the steps below.  **Always** create a copy or backup of your current source code in case something goes awry though these updates should be hopefully painless.
+If you don't want to update your code directly, we can offer [our services](http://alpinepipeline.com/pages/services) or you can use another objective-c programmer to perform the steps below.  **Always** create a copy or backup of your current source code in case something goes awry though these updates should be hopefully painless.
 
+If you have troubles viewing or copying code from this document, the code can also be viewed on our [Github Repository](https://github.com/kevinvanderlugt/template_documents/blob/master/io8_upgrade/amazing_brick.md)
 
 ### Fixing NSLog warnings during game transition
 This is a pretty small code change and can be ignored.  It is a very easy fix though so I would recommend it.
