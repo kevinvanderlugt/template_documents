@@ -6,7 +6,8 @@ The purpose of this document is to outline the steps required to upgrade your ap
 ```objective-c
 #import <Chartboost/Chartboost.h>
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (BOOL)application:(UIApplication *)application 
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   // initialize the Chartboost library
   [Chartboost startWithAppId:@"YOUR_CHARTBOOST_APP_ID" 
