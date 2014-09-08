@@ -48,3 +48,16 @@ This is a pretty small code change and can be ignored.  It is a very easy fix th
 ### Upgrading Chartboost SDK
 The new version of Chartboost has taken a big change.  There will be code that needs to be updated throughout the code base.
 Each step is listed below for the code to replace.  
+=======
+- (BOOL)application:(UIApplication *)application 
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+  // initialize the Chartboost library
+  [Chartboost startWithAppId:@"YOUR_CHARTBOOST_APP_ID" 
+                appSignature:@"YOUR_CHARTBOOST_APP_SIGNATURE" 
+                    delegate:self];
+   
+  // Show an interstitial ad
+  [Chartboost showInterstitial:CBLocationHomeScreen];
+}
+```
