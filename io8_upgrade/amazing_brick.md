@@ -2,7 +2,9 @@
 The purpose of this document is to outline the steps required to upgrade your app based on the Amazing Brick Template.
 This upgrade to your code base expects some knowledge of xCode and Objective-C.  
 
-If you don't want to update your code directly, we can offer [our services](http://alpinepipeline.com/pages/services) or you can use another objective-c programmer to perform the steps below.  **Always** create a copy or backup of your current source code in case something goes awry though these updates should be hopefully painless.
+If you don't want to update your code directly, we are happy to offer [our services for a **flat $75 fee**](http://alpinepipeline.com/pages/services) or you can use another programmer to perform the steps below.  
+
+**Always** create a copy or backup of your current source code in case something goes awry though these updates should be hopefully painless.
 
 If you have troubles viewing or copying code from this document, the code can also be viewed on our [Github Repository](https://github.com/kevinvanderlugt/template_documents/blob/master/io8_upgrade/amazing_brick.md)
 
@@ -47,17 +49,25 @@ This is a pretty small code change and can be ignored.  It is a very easy fix th
 
 ### Upgrading Chartboost SDK
 The new version of Chartboost has taken a big change.  There will be code that needs to be updated throughout the code base.
-Each step is listed below for the code to replace.  
-=======
-- (BOOL)application:(UIApplication *)application 
-    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-  // initialize the Chartboost library
-  [Chartboost startWithAppId:@"YOUR_CHARTBOOST_APP_ID" 
-                appSignature:@"YOUR_CHARTBOOST_APP_SIGNATURE" 
-                    delegate:self];
-   
-  // Show an interstitial ad
-  [Chartboost showInterstitial:CBLocationHomeScreen];
-}
-```
+Each step below will need to be performed.
+
+1. Remove the existing Chartboost folder from the third_party folder and remove from xCode
+2. Drag and drop the new Chartboost Framework into your project.
+3. Make the following changes to your code packages.
+  * In GameOverViewController.m 
+    * replace `#import "Chartboost.h"` with `#import <Chartboost/Chartboost.h>`
+    * replace `[[Chartboost sharedChartboost] showInterstitial:CBLocationGameOver];` with `[[Chartboost sharedChartboost] showInterstitial:CBLocationGameOver];`
+  * In MenuViewController.m
+    * replace `#import "Chartboost.h"` with `#import <Chartboost/Chartboost.h>`
+    * replace `[[Chartboost sharedChartboost] showMoreApps:CBLocationMainMenu];` with `[Chartboost showMoreApps:CBLocationMainMenu];`
+  * In AppDelegate.m
+    * replace `#import "Chartboost.h"` with `#import <Chartboost/Chartboost.h>`
+    * replace `[[Chartboost sharedChartboost] cacheMoreApps:CBLocationMainMenu];` with `[Chartboost cacheMoreApps:CBLocationMainMenu];`
+
+### Upgrading Flurry SDK
+TODO: Fill in
+
+### Upgrading Appirater SDK
+TODO: Fill in
+
+
