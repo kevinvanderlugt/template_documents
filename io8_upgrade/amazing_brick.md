@@ -54,21 +54,21 @@ Each step below will need to be performed.
 1. Remove the existing Chartboost folder from the third_party folder and remove from xCode
 2. Drag and drop the new Chartboost Framework into your project.
 3. Make the following changes to your code packages.
-  * In GameOverViewController.m 
-    * replace 
+  * In GameOverViewController.m make the following changes
+    1. Replace the following 
     ```objective-c
     #import "Chartboost.h"
     ``` 
-    * with 
+    with 
     ```objective-c
     #import <Chartboost/Chartboost.h>
     ```
 
     * replace `[[Chartboost sharedChartboost] showInterstitial:CBLocationGameOver];` with `[[Chartboost sharedChartboost] showInterstitial:CBLocationGameOver];`
-  * In MenuViewController.m
+  * In MenuViewController.m make the following changes
     * replace `#import "Chartboost.h"` with `#import <Chartboost/Chartboost.h>`
     * replace `[[Chartboost sharedChartboost] showMoreApps:CBLocationMainMenu];` with `[Chartboost showMoreApps:CBLocationMainMenu];`
-  * In AppDelegate.m
+  * In AppDelegate.m make the following changes
     * replace `#import "Chartboost.h"` with `#import <Chartboost/Chartboost.h>`
     * replace `[[Chartboost sharedChartboost] cacheMoreApps:CBLocationMainMenu];` with `[Chartboost cacheMoreApps:CBLocationMainMenu];`
 
