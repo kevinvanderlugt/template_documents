@@ -52,7 +52,7 @@ The new version of Chartboost has taken a big change.  There will be code that n
 Each step below will need to be performed.
 
 1. Remove the existing Chartboost folder from the third_party folder and remove from xCode
-2. Drag and drop the new Chartboost Framework into your project.
+2. Drag and drop the new Chartboost Framework (from our updated template) into your project.
 3. Make the following changes to your code packages.
   * In GameOverViewController.m make the following changes
     1. Replace the following 
@@ -108,9 +108,14 @@ Each step below will need to be performed.
     ```
 
 ### Upgrading Flurry SDK
-TODO: Fill in
+This upgrade is **optional** as it provides no value yet for analytic only users.
+However; it is recommended by Flurry to stay up to date, so it has been added to this update.
+It is also a very easy upgrade so I would go for it.  Follow the steps below to upgrade your version.
+
+1. Remove the existing Flurry folder from third_party
+2. Drag and drop the new Flurry folder (from our updated template) into your project.
 
 ### Upgrading Appirater SDK
-TODO: Fill in
-
+This is unknown if there is a problem yet.   
+Currently the rate link doesn't in iOS8 anymore but waiting for GM to decide what to do
 
