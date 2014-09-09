@@ -55,9 +55,15 @@ Each step below will need to be performed.
 2. Drag and drop the new Chartboost Framework into your project.
 3. Make the following changes to your code packages.
   * In GameOverViewController.m 
-    * replace ```objective-c#import "Chartboost.h"``` 
-    * with ```objective-c#import <Chartboost/Chartboost.h>```
-    
+    * replace 
+    ```objective-c
+    #import "Chartboost.h"
+    ``` 
+    * with 
+    ```objective-c
+    #import <Chartboost/Chartboost.h>
+    ```
+
     * replace `[[Chartboost sharedChartboost] showInterstitial:CBLocationGameOver];` with `[[Chartboost sharedChartboost] showInterstitial:CBLocationGameOver];`
   * In MenuViewController.m
     * replace `#import "Chartboost.h"` with `#import <Chartboost/Chartboost.h>`
