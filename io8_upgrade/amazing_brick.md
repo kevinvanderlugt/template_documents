@@ -59,18 +59,53 @@ Each step below will need to be performed.
     ```objective-c
     #import "Chartboost.h"
     ``` 
-    with 
+    With 
     ```objective-c
     #import <Chartboost/Chartboost.h>
     ```
-
-    * replace `[[Chartboost sharedChartboost] showInterstitial:CBLocationGameOver];` with `[[Chartboost sharedChartboost] showInterstitial:CBLocationGameOver];`
+    2. Replace the following 
+    ```objective-c
+    [[Chartboost sharedChartboost] showInterstitial:CBLocationGameOver];
+    ``` 
+    With 
+    ```objective-c
+    [[Chartboost sharedChartboost] showInterstitial:CBLocationGameOver];
+    ```
   * In MenuViewController.m make the following changes
-    * replace `#import "Chartboost.h"` with `#import <Chartboost/Chartboost.h>`
-    * replace `[[Chartboost sharedChartboost] showMoreApps:CBLocationMainMenu];` with `[Chartboost showMoreApps:CBLocationMainMenu];`
+    1. Replace the following 
+    ```objective-c
+    #import "Chartboost.h"
+    ``` 
+    With 
+    ```objective-c
+    #import <Chartboost/Chartboost.h>
+    ```
+    2. Replace the following 
+    ```objective-c
+    [[Chartboost sharedChartboost] showMoreApps:CBLocationMainMenu];
+    ``` 
+    With 
+    ```objective-c
+    [Chartboost showMoreApps:CBLocationMainMenu];
+    ```
+
   * In AppDelegate.m make the following changes
-    * replace `#import "Chartboost.h"` with `#import <Chartboost/Chartboost.h>`
-    * replace `[[Chartboost sharedChartboost] cacheMoreApps:CBLocationMainMenu];` with `[Chartboost cacheMoreApps:CBLocationMainMenu];`
+    1. Replace the following 
+    ```objective-c
+    #import "Chartboost.h"
+    ```
+    With 
+    ```objective-c
+    #import <Chartboost/Chartboost.h>
+    ```
+    2. Replace the following 
+    ```objective-c
+    [[Chartboost sharedChartboost] cacheMoreApps:CBLocationMainMenu];
+    ``` 
+    With 
+    ```objective-c
+    [Chartboost cacheMoreApps:CBLocationMainMenu];
+    ```
 
 ### Upgrading Flurry SDK
 TODO: Fill in
