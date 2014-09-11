@@ -81,8 +81,6 @@ Each step below will need to be performed.
 In a new build targeting iOS 8.0+ the hands in the HowToPlayViewController will not be properly positioned.
 In order to fix this issue we have made the update as simple as we could.  
 
-If you have changed this file, here are the steps to upgrade:
-
 1. If you have not changed HowToPlayViewController.m, simply copy and replace the file from the updated template
 2. If you have changed HowToPlayViewController.m
   * paste the following lines of code before the @end at the end of this file
