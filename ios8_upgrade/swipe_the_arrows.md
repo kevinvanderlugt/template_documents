@@ -3,6 +3,7 @@ The purpose of this document is to outline the steps required to upgrade your ap
 This upgrade to your code base expects some knowledge of xCode and Objective-C.  
 
 **Requirements**
+
 1. You must be using and have the most recent copy of xCode 6 from the developer center, these updates wont work for xCode 5.
 2. Apple is currently approving apps for iOS8 but won't release until Sept 17th, 2014.  By doing this update, your app wont be able to release until then.
 3. These steps are only necessary if you are upgrading your existing game based on our template.  If you have a fresh updated copy, you can safely ignore these steps as the template is updated for you already!
