@@ -54,7 +54,7 @@ Add the following method header in GameScene.h
 
 3. Add your button in the StoryBoard and setup your autolayout constraints. Since these are so tricky to teach in a document, I recommend learning from [Apple's documentation](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/AutolayoutPG/Introduction/Introduction.html)
 
-4. Control drag from the button to the orange exit box in the top of the view controller.  Select the replay: method.   !(https://github.com/kevinvanderlugt/template_documents/blob/e564e41dabebdc5d17b84fb1f5d55db2fecdd8c3/amazing_bricks/replay_button_action.png)
+4. Control drag from the button to the orange exit box in the top of the view controller.  Select the replay: method.   ![Button Action](https://github.com/kevinvanderlugt/template_documents/blob/e564e41dabebdc5d17b84fb1f5d55db2fecdd8c3/amazing_bricks/replay_button_action.png)
 
 You should now have a working replay button.  Be sure to test it out and make sure its working with your theme!
 Thanks for reading.
