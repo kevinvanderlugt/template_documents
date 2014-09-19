@@ -62,5 +62,7 @@ You should now have a working replay button.
 
 
 Be sure to test it out and make sure its working with your theme!
+
 Thanks for reading.
+
 **Cheers!**
