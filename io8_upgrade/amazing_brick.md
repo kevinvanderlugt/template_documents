@@ -6,6 +6,8 @@ To perform this upgrade, some knowledge of xCode and Objective-C is expected.
 
 1. You must be using the most recent copy of xCode 6 from the developer center; these updates wont work for xCode 5.
 2. Apple is currently approving apps for iOS8 but won't release them until Sept 17th, 2014.  If you update now, your app wont be able to release until then.
+3. These steps are only necessary if you are upgrading your existing game based on our template.  If you have a fresh updated copy, you can safely ignore these steps as the template is updated for you already!
+
 
 If you don't want to update your code yourself, we are happy to offer [our services for a **flat $75 fee**](http://alpinepipeline.com/pages/services).  
 
