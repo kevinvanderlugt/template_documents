@@ -10,10 +10,9 @@ These steps expects some knowledge of xCode and Objective-C.
 
 ## Steps to fix the share button
 1. In AmazingBrick-Prefix.pch, add the following method.
-```objective-c
-#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
-```
-
+  ```objective-c
+  #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+  ```
 2. In GameOverViewController.m
   * locate the following line of code (should be around line 112).
   ```objective-c
