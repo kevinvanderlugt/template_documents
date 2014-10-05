@@ -4,6 +4,7 @@ This guide is to walk you through the steps of fixing the share button popover f
 These steps expects some knowledge of xCode and Objective-C.  
 
 **Requirements**
+
 1. You must be using and have the most recent copy of xCode 6 from the developer center, these updates wont work for xCode 5.
 
 **Always** create a copy or backup of your current source code in case something goes awry though these updates should be hopefully painless.
