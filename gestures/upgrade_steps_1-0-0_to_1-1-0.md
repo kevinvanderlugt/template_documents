@@ -32,7 +32,7 @@ These steps expects some knowledge of xCode and Objective-C. If you don't want t
 5. **optional** Remove the existing folders from your "Library Search Paths" in "Build Settings"
 
 ## Steps to fix the share button
-1. In AmazingBrick-Prefix.pch, add the following method.
+1. In GestureGame-Prefix.pch, add the following method.
 
   ```objective-c
   #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
