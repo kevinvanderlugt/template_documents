@@ -20,7 +20,13 @@ These steps expects some knowledge of xCode and Objective-C. If you don't want t
 1. Remove the existing Admob SDK and the Mediation Adapter folders from the third_party folder and remove from xCode.
 2. Drag and drop the new Admob SDK and the Mediation Adapter folders (from our updated template) into your project.
 3. Add the EventKit and EventKitUI frameworks to your build phases.
-4. **optional** Remove the existing folders from your "Library Search Paths" in "Build Settings"
+4. Add the following lines of code to the viewWillDisappear method in iAdViewController.m
+  ```objective-c
+    [bannerView_ removeFromSuperview];
+    bannerView_.delegate = nil;
+    bannerView_ = nil;
+  ```
+5. **optional** Remove the existing folders from your "Library Search Paths" in "Build Settings"
 
 ## Steps to fix the share button
 1. In AmazingBrick-Prefix.pch, add the following method.
