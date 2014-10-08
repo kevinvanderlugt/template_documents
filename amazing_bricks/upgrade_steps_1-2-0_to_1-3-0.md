@@ -1,4 +1,4 @@
-# Adding replay button to Amazing Brick Template
+# Update steps for your existing Amazing Brick Template game to v1.3.0
 The purpose of this document is to outline the steps required to upgrade your app based on the Amazing Brick Template.
 These steps are only necessary if you are upgrading your existing game based on our template.  If you have a fresh updated copy, you can safely ignore these steps as the template is updated for you already!
 
