@@ -1,4 +1,4 @@
-# Adding replay button to Amazing Brick Template
+# Updating your existing Gestures! game to v1.1.0
 The purpose of this document is to outline the steps required to upgrade your app based on the Gestures! Template.
 These steps are only necessary if you are upgrading your existing game based on our template.  If you have a fresh updated copy, you can safely ignore these steps as the template is updated for you already!
 
