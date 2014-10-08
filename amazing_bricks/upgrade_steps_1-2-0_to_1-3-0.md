@@ -2,7 +2,7 @@
 The purpose of this document is to outline the steps required to upgrade your app based on the Amazing Brick Template.
 These steps are only necessary if you are upgrading your existing game based on our template.  If you have a fresh updated copy, you can safely ignore these steps as the template is updated for you already!
 
-**What's new in 1.1.0?**
+**What's new in 1.3.0?**
 
 1. Updated AdMob SDK to 1.12.0 and iAd Mediation Adapter.
 2. Fixed a crash for iPad running iOS8 and pressing the share button
