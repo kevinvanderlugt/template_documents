@@ -7,8 +7,6 @@ These steps are only necessary if you are upgrading your existing game based on 
 1. Fixed a crash for iPad running iOS8 and pressing the share button
 3. Updated Chartboost Framework to 5.0.3
 
-These steps expects some knowledge of xCode and Objective-C. If you don't want to update your code directly, we are happy to offer [our services for a **flat $75 fee**](http://alpinepipeline.com/pages/services) or you can use another programmer to perform the steps below.   
-
 **Requirements**
 
 1. You must be using and have the most recent copy of xCode 6 from the developer center, these updates wont work for xCode 5.
